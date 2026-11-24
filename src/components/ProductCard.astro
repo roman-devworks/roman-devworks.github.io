@@ -1,0 +1,21 @@
+---
+import type { Product } from '../config/products';
+interface Props { product: Product }
+const { product } = Astro.props;
+---
+
+<article class="product-card">
+  <div class="product-card-heading">
+    <span class="product-icon" aria-hidden="true">{product.icon}</span>
+    <div>
+      <p class="product-category">{product.category}</p>
+      <h3>{product.name}</h3>
+    </div>
+    <span class="product-status">{product.status === 'development' ? 'In development' : 'Released'}</span>
+  </div>
+  <p>{product.description}</p>
+  <div class="product-links">
+    <a href={product.documentationPath}>Explore documentation <span aria-hidden="true">→</span></a>
+    {product.productUrl && <a href={product.productUrl}>Product website <span aria-hidden="true">↗</span></a>}
+  </div>
+</article>

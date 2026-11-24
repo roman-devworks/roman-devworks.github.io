@@ -1,0 +1,24 @@
+{
+  "name": "roman-devworks.github.io",
+  "version": "1.0.0",
+  "description": "The documentation site for all of the roman-devworks applications.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "type": "module",
+  "dependencies": {
+    "@astrojs/starlight": "^0.43.1",
+    "astro": "^7.4.13"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^6.0.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
