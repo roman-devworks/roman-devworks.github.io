@@ -13,4 +13,4 @@ Share only the information needed to investigate an issue. Avoid sending credent
 
 ## Privacy
 
-A privacy policy and terms of service are pending approval and are not published as active policies. For privacy questions, contact [contact@roman-devworks.com](mailto:contact@roman-devworks.com); confirm the alias before public launch.
+A privacy policy and terms of service are pending approval and are not published as active policies. To see what FormOps stores, read [Permissions and data](/products/formops/permissions/#data-formops-stores). For privacy questions, contact [contact@roman-devworks.com](mailto:contact@roman-devworks.com); confirm the alias before public launch.
