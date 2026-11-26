@@ -8,6 +8,15 @@ export default defineConfig({
     starlight({
       title: 'Roman Devworks',
       favicon: '/favicon.svg',
+      head: [
+        {
+          // Starlight has no default-theme option: seed dark once, before its theme script reads the stored value.
+          // Only runs when nothing is stored, so a later Light or Auto choice is never overwritten.
+          tag: 'script',
+          content:
+            "try{localStorage.getItem('starlight-theme')===null&&localStorage.setItem('starlight-theme','dark')}catch{}",
+        },
+      ],
       customCss: ['./src/styles/custom.css'],
       components: { Footer: './src/components/Footer.astro' },
       sidebar: [
